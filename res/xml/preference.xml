@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="设置"
+    android:key="key_setting">
+    
+    <CheckBoxPreference
+        android:persistent="true"
+        android:defaultValue="false"	
+        android:key="key_autorun"
+        android:title="开机自动运行" />
+    
+    <PreferenceCategory
+	    android:key="key_content_setting"
+	    android:title="内容设置">
+    
+	   	<ListPreference
+	       	android:defaultValue="10"	
+	        android:dialogTitle="选择显示时长"
+	        android:entries="@array/show_time_entries"
+	        android:entryValues="@array/show_time_entries"
+	        android:key="key_show_time"
+	        android:title="显示时长" />
+	    
+	   	<ListPreference
+	       	android:defaultValue="Joke"	
+	        android:dialogTitle="选择显示内容"
+	        android:entries="@array/show_content_entrise"
+	        android:entryValues="@array/show_content_values"
+	        android:key="key_show_content"
+	        android:title="显示内容" />    
+
+   	</PreferenceCategory>	
+   	
+   	<PreferenceCategory
+	    android:key="key_software_setting"
+	    android:title="软件设置">
+	    
+	    <PreferenceScreen
+	        android:title="联网更新内容">   
+	        <intent android:action = "cn.chendihao.MainActivity"/>    
+	    </PreferenceScreen>  
+	    
+	    <PreferenceScreen
+	        android:title="关于"> 
+	        <intent android:action = "android.intent.action.MAIN"  
+	        	android:targetPackage="cn.chendihao"
+	        	android:targetClass="cn.chendihao.AboutActivity" />
+	    </PreferenceScreen>
+	    
+	 </PreferenceCategory>
+
+ 
+</PreferenceScreen>

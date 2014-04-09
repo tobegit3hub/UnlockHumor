@@ -1,0 +1,20 @@
+<resources>
+    <string-array name="show_time_entries">
+    	<item>5</item>
+    	<item>10</item>
+    	<item>30</item>
+    	<item>60</item>
+    </string-array>
+    
+    
+    <string-array name="show_content_entrise">
+    	<item>笑话</item>
+    	<item>生活百科</item>
+    </string-array>
+    
+    <string-array name="show_content_values">
+    	<item>Joke</item>
+    	<item>Encyclopedia</item>
+    </string-array>
+ 
+</resources>
